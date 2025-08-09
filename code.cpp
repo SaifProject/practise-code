@@ -142,12 +142,12 @@ for (int i = 0; i < s.size(); i++) {
     lucky number 
 
 
-    
+
     nt main() {
     int a, b;
     cin >> a >> b;
 
-    int max , min ;
+    int max  , min ;
     if(a>b){
         max=a;
         min=b;
@@ -174,3 +174,22 @@ for (int i = 0; i < s.size(); i++) {
     if (count==0){
         cout << "-1";
     }*/
+
+
+    bool is_prime(int i){
+    for(int j=2;j<i;j++){
+        if(i%j==0){
+            return 0;
+        }
+    }
+    return 1;
+}
+
+int main() {
+	int n;
+	cin>>n;
+    for(int i=2;i<=n;i++){
+            if(is_prime(i)==1){
+                cout<<i<<' ';	       
+        }	    
+    }
