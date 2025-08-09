@@ -135,3 +135,42 @@ for (int i = 0; i < s.size(); i++) {
             s[i] = s[i] - 'A' + 'a'; 
         }
     }
+
+
+
+    /*
+    lucky number 
+
+
+    
+    nt main() {
+    int a, b;
+    cin >> a >> b;
+
+    int max , min ;
+    if(a>b){
+        max=a;
+        min=b;
+    }
+    else{
+        min=a;
+        max=b;
+    }
+    int count=0;
+
+    for (int i = min; i <= max; i++) {
+        int n = i;
+        while (n > 0) {
+            int d = n % 10;
+            if (d != 4 && d != 7)
+             break;
+            n =n / 10;
+        }
+        if (n == 0) {
+            cout << i << " ";
+            count++;
+        }
+    }
+    if (count==0){
+        cout << "-1";
+    }*/
